@@ -100,6 +100,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    height: 50,
   },
   tabs: {
     height: 50,
