@@ -41,7 +41,7 @@ const DefaultTabBar = createReactClass({
     const cstyle = isTabActive ? this.props.tabActive : this.props.tabInActive;
     const fontWeight = isTabActive ? 'bold' : 'normal';
     return <Button
-      style={[{flex: 1}]}
+      style={[{flex: 1}, cstyle]}
       key={name}
       accessible={true}
       accessibilityLabel={name}
