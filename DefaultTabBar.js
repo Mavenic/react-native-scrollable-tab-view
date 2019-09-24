@@ -48,7 +48,7 @@ const DefaultTabBar = createReactClass({
       accessibilityTraits='button'
       onPress={() => onPressHandler(page)}
     >
-      <Text style={[{color: textColor, fontWeight, }, textStyle]}>
+      <Text style={[{color: textColor, fontWeight: fontWeight}, textStyle]}>
         {name}
       </Text>
     </Button>;
