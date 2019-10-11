@@ -4,11 +4,10 @@ const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 const {
   StyleSheet,
-  Text,
   View,
   Animated,
 } = ReactNative;
-import {Button} from 'native-base';
+import {Button, Text} from 'native-base';
 
 const DefaultTabBar = createReactClass({
   propTypes: {
