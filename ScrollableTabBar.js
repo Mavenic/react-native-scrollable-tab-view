@@ -7,10 +7,10 @@ const {
   Animated,
   StyleSheet,
   ScrollView,
-  Text,
   Platform,
   Dimensions,
 } = ReactNative;
+import {Text} from 'native-base';
 const Button = require('./Button');
 
 const WINDOW_WIDTH = Dimensions.get('window').width;
