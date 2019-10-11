@@ -2,7 +2,7 @@ const React = require('react');
 const ReactNative = require('react-native');
 const {
   TouchableNativeFeedback,
-  TouchableWithoutFeedback
+  TouchableWithoutFeedback,
   View,
 } = ReactNative;
 
