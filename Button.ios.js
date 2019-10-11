@@ -2,13 +2,14 @@ const React = require('react');
 const ReactNative = require('react-native');
 const {
  TouchableOpacity,
+ TouchableWithoutFeedback,
   View,
 } = ReactNative;
 
 const Button = (props) => {
-  return <TouchableOpacity {...props}>
+  return <TouchableWithoutFeedback {...props}>
     {props.children}
-  </TouchableOpacity>;
+  </TouchableWithoutFeedback>;
 };
 
 module.exports = Button;
