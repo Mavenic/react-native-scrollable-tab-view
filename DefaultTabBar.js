@@ -6,8 +6,9 @@ const {
   StyleSheet,
   View,
   Animated,
+  TouchableWithoutFeedback,
 } = ReactNative;
-import {Button, Text} from 'native-base';
+import {Button,Text} from 'native-base';
 
 const DefaultTabBar = createReactClass({
   propTypes: {
@@ -38,19 +39,20 @@ const DefaultTabBar = createReactClass({
     const { activeTextColor, inactiveTextColor, textStyle, } = this.props;
     const textColor = isTabActive ? activeTextColor : inactiveTextColor;
     const cstyle = isTabActive ? this.props.tabActive : this.props.tabInActive;
-    const fontWeight = isTabActive ? 'bold' : 'normal';
-    return <Button
-      style={[styles.tab, cstyle]}
+    const fontWeight = isTabActive ? 'normal' : 'normal';
+    return <TouchableWithoutFeedback
       key={name}
       accessible={true}
       accessibilityLabel={name}
       accessibilityTraits='button'
       onPress={() => onPressHandler(page)}
     >
-      <Text style={[{color: textColor, fontWeight: fontWeight}, textStyle]}>
-        {name}
-      </Text>
-    </Button>;
+      <View style={[styles.tab, cstyle]}>
+        <Text style={[{color: textColor, fontWeight: fontWeight}, textStyle]}>
+          {name}
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>;
   },
 
   render() {
